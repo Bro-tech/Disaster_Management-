@@ -2,6 +2,7 @@ import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
+
 // Enums for better data modeling
 enum DisasterType { FLOOD, EARTHQUAKE, FIRE, CYCLONE, OTHER }
 enum Severity { LOW, MEDIUM, HIGH, CRITICAL }
@@ -840,3 +841,4 @@ public class App {
         return "[" + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()) + "] " + action + " (User: " + (currentUser != null ? currentUser.getUsername() : "system") + ")";
     }
 }
+
