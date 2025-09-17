@@ -182,7 +182,7 @@ class DataHandler {
                 if (obj != null) data.add(obj);
             }
         } catch (IOException e) {
-            // File may not exist on first run
+            
         }
         return data;
     }
@@ -841,4 +841,5 @@ public class App {
         return "[" + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()) + "] " + action + " (User: " + (currentUser != null ? currentUser.getUsername() : "system") + ")";
     }
 }
+
 
